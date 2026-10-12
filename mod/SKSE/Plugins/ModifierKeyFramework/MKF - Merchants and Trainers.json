@@ -1,0 +1,55 @@
+{
+  // MKF - Merchants and Trainers: hold the Modifier Key Framework key on a merchant to trade, or on a
+  // trainer to train, straight away. It plays out as if you had picked the topic in dialogue: the NPC
+  // turns to you, says their line and stays with you; the conversation ends when the menu closes.
+  // Activating normally stays vanilla (Talk). An NPC who does both gets both actions (Buy / Sell on
+  // Activate, Pay For Training on the second slot). An action shows only while the NPC offers that
+  // topic, so a trainer whose training is used up, or a list without trainers, just shows Buy / Sell.
+  // Labels: Interface/Translations/MKF - Merchants and Trainers_<LANGUAGE>.txt
+  "version": 4,
+  "rules": [
+    {
+      "id": "merchants-trainers",
+      "target": "npc",
+      "requires": {
+        "alive": true,
+        "topic": [
+          "Skyrim.esm|0x7F6BB", "Skyrim.esm|0x109E68", "Skyrim.esm|0xAC974",
+          "Dawnguard.esm|0xF816", "Dawnguard.esm|0x10662", "HearthFires.esm|0x3D61",
+          "Dragonborn.esm|0x17E69", "Dragonborn.esm|0x2BC5F",
+          "Skyrim.esm|0xE3A35", "Dawnguard.esm|0x10A81", "Dawnguard.esm|0x11198",
+          "Dragonborn.esm|0x2C432", "Dragonborn.esm|0x20677"
+        ]
+      },
+      "not": { "inCombat": true },
+      "alternate": [
+        {
+          "label": "$MKFMT_Trade",
+          "topic": [
+            "Skyrim.esm|0x7F6BB",       // What have you got for sale? (every merchant)
+            "Skyrim.esm|0x109E68",      // Urag gro-Shub
+            "Skyrim.esm|0xAC974",       // orc hunters (world encounter)
+            "Dawnguard.esm|0xF816",     // Fort Dawnguard
+            "Dawnguard.esm|0x10662",    // Castle Volkihar
+            "HearthFires.esm|0x3D61",   // Sofie
+            "Dragonborn.esm|0x17E69",   // Tel Mithryn
+            "Dragonborn.esm|0x2BC5F"    // Solstheim merchants
+          ],
+          "endDialogue": true
+        },
+        {
+          "label": "$MKFMT_Train",
+          "topic": [
+            "Skyrim.esm|0xE3A35",       // every trainer
+            "Dawnguard.esm|0x10A81",    // Fort Dawnguard
+            "Dawnguard.esm|0x11198",    // Castle Volkihar
+            "Dragonborn.esm|0x2C432",   // Neloth
+            "Dragonborn.esm|0x20677"    // Talvas
+          ],
+          "endDialogue": true
+        }
+      ],
+      "priority": 5
+    }
+  ]
+}
