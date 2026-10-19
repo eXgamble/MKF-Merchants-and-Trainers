@@ -3,9 +3,9 @@
 Hold the [Modifier Key Framework](https://github.com/eXgamble/Modifier-Key-Framework) key on a
 merchant to trade, or on a trainer to train, straight away.
 
-It plays out as if you had picked the topic in dialogue: the NPC turns to you, says their line
-("What have you got for sale?") and stays with you while you trade. The conversation ends when the
-barter or training menu closes. Activating normally stays vanilla (Talk).
+It plays out as if you had picked "What have you got for sale?" in dialogue, without the dialogue
+menu: the NPC turns to you, says their answer and stays with you while you trade. The conversation
+ends when the barter or training menu closes. Activating normally stays vanilla (Talk).
 
 - **Buy / Sell** on merchants, **Pay For Training** on trainers. Someone who does both gets both:
   Buy / Sell on Activate, Pay For Training on the second button (X on a controller, R on a keyboard).
@@ -18,7 +18,7 @@ barter or training menu closes. Activating normally stays vanilla (Talk).
 
 ## Requirements
 
-- Modifier Key Framework 1.3.0 or newer
+- Modifier Key Framework 1.7.0 or newer (1.3.0 to 1.6.x work, but show the dialogue menu)
 
 ## Files
 
