@@ -12,13 +12,14 @@ ends when the barter or training menu closes. Activating normally stays vanilla 
 - An action only shows while the NPC offers it: a shop closed for the night shows no Buy / Sell, a
   trainer you can't train with any more shows no Pay For Training. A load order without trainers
   just never shows it.
+- Nobody trades or trains while in combat, bleeding out, unconscious, knocked down or paralyzed.
 - Covers the generic merchant and trainer topics plus the special ones (Urag gro-Shub, Fort
   Dawnguard, Castle Volkihar, Sofie, Tel Mithryn, Neloth, Talvas, Solstheim merchants).
 - No plugin: one rule file and a translation file.
 
 ## Requirements
 
-- Modifier Key Framework 1.7.0 or newer (1.3.0 to 1.6.x work, but show the dialogue menu)
+- Modifier Key Framework 1.8.0 or newer
 
 ## Files
 
