@@ -51,7 +51,9 @@
           "endDialogue": true
         }
       ],
-      "priority": 5
+      // lowest: trading and training are for a few NPCs, so an action most NPCs offer (another mod's) keeps
+      // its button everywhere and these take the next ones
+      "priority": 0
     }
   ]
 }
