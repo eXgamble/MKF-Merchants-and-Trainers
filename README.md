@@ -12,7 +12,8 @@ ends when the barter or training menu closes. Activating normally stays vanilla 
 - An action only shows while the NPC offers it: a shop closed for the night shows no Buy / Sell, a
   trainer you can't train with any more shows no Pay For Training. A load order without trainers
   just never shows it.
-- Nobody trades or trains while in combat, bleeding out, unconscious, knocked down or paralyzed.
+- Nobody trades or trains while in combat, bleeding out, unconscious, knocked down or paralyzed, or while
+  you're in combat.
 - Covers the generic merchant and trainer topics plus the special ones (Urag gro-Shub, Fort
   Dawnguard, Castle Volkihar, Sofie, Tel Mithryn, Neloth, Talvas, Solstheim merchants).
 - No plugin: one rule file and a translation file.

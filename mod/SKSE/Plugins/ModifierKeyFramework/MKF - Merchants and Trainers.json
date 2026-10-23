@@ -6,7 +6,7 @@
   // Activate, Pay For Training on the second slot). An action shows only while the NPC offers that
   // topic, so a trainer whose training is used up, or a list without trainers, just shows Buy / Sell.
   // Nobody trades or trains while in combat, bleeding out, unconscious, knocked down or paralyzed (a
-  // downed merchant offered Buy / Sell, found 2026-10-22).
+  // downed merchant offered Buy / Sell, found 2026-10-22), or while you're in combat.
   // Labels: Interface/Translations/MKF - Merchants and Trainers_<LANGUAGE>.txt
   "version": 8,
   "rules": [
@@ -23,7 +23,7 @@
           "Dragonborn.esm|0x2C432", "Dragonborn.esm|0x20677"
         ]
       },
-      "not": { "inCombat": true, "bleedingOut": true, "unconscious": true, "knockedDown": true },
+      "not": { "inCombat": true, "playerInCombat": true, "bleedingOut": true, "unconscious": true, "knockedDown": true },
       "alternate": [
         {
           "label": "$MKFMT_Trade",
